@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoDrive</title> 
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="/login" method="post">
+            <div class="input-group">
+                <label for="username"><i class="fa fa-user"></i></label>
+                <input type="text" id="username" name="username" placeholder="Usuário" required>
+            </div>
+            <div class="input-group">
+                <label for="password"><i class="fa fa-lock"></i></label>
+                <input type="password" id="password" name="password" placeholder="Senha" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="signup-link">
+            <p>Não tem uma conta? <a href="./pages/registro.html" id="registerLink">Cadastre-se aqui</a></p>
+            <p><a href="/pages/request-password-reset.html">Esqueci minha Senha</a></p>
+        </div>
+    </div>
+
+
+    <script src="./public/scripts/script.js"></script>
+</body>
+
+</html>
